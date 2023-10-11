@@ -1,0 +1,9 @@
+        .checkstyle
+        .classpath
+        .project
+        ProjectBezJar.jar
+        build.xml
+        doc/
+        new_diagram.uxf
+        out/
+        readme.txt

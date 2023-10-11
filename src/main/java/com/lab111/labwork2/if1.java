@@ -7,5 +7,13 @@ package com.lab111.labwork2;
 public interface if1 extends if3
 {
 	public void method1();
+	
+	
+	
+	
+	
+	
+	
+	
 
 }
