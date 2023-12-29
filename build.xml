@@ -175,5 +175,97 @@
 			     </javadoc>
 			</target> 
 
+	<!-- =================== Create JavaDoc for lab3 Target ==================================== -->
+			<target name="javadoc_lab3">
+				<delete includeEmptyDirs="true">
+						<fileset dir="doc3">
+					<!-- Вибираємо всі файли зі всіх розширень, крім .uxf -->
+							  <exclude name="**/*.uxf" />
+						</fileset>
+				</delete>
+			    <javadoc sourcepath="${lab3_Doc}" destdir="doc3">		            
+				           <packageset dir="${sourceDir}">
+				               <include name="com/lab111/labwork3" />
+				           </packageset>
+				 </javadoc>
+			 </target>
+	<!-- =================== Create JavaDoc for lab4 Target ==================================== -->
+			<target name="javadoc_lab4">
+				<delete includeEmptyDirs="true">
+						<fileset dir="doc4">
+								 <exclude name="**/*.uxf" />
+						</fileset>
+				</delete>
+				   <javadoc sourcepath="${lab4_Doc}" destdir="doc4">		            
+					          <packageset dir="${sourceDir}">
+					              <include name="com/lab111/labwork4" />
+					          </packageset>
+					</javadoc>
+				</target> 
+	<!-- =================== Create JavaDoc for lab5 Target ==================================== -->
+			<target name="javadoc_lab5">
+				<delete includeEmptyDirs="true">
+						<fileset dir="doc">
+								 <exclude name="**/*.uxf" />
+						</fileset>
+				</delete>
+				   <javadoc sourcepath="${lab5_Doc}" destdir="doc5">		            
+					          <packageset dir="${sourceDir}">
+					              <include name="com/lab111/labwork5" />
+					          </packageset>
+					</javadoc>
+				</target> 
+	<!-- =================== Create JavaDoc for lab6 Target ==================================== -->
+				<target name="javadoc_lab6">
+					<delete includeEmptyDirs="true">
+							<fileset dir="doc">
+									 <exclude name="**/*.uxf" />
+							</fileset>
+					</delete>
+					   <javadoc sourcepath="${lab6_Doc}" destdir="doc6">		            
+						          <packageset dir="${sourceDir}">
+						              <include name="com/lab111/labwork6" />
+						          </packageset>
+						</javadoc>
+					</target> 
+	<!-- =================== Create JavaDoc for lab7 Target ==================================== -->
+					<target name="javadoc_lab7">
+						<delete includeEmptyDirs="true">
+								<fileset dir="doc7">
+										 <exclude name="**/*.uxf" />
+								</fileset>
+						</delete>
+						   <javadoc sourcepath="${lab7_Doc}" destdir="doc7">		            
+							          <packageset dir="${sourceDir}">
+							              <include name="com/lab111/labwork7" />
+							          </packageset>
+							</javadoc>
+						</target> 
+	<!-- =================== Create JavaDoc for lab8 Target ==================================== -->
+					<target name="javadoc_lab8">
+						<delete includeEmptyDirs="true">
+								<fileset dir="doc8">
+										 <exclude name="**/*.uxf" />
+								</fileset>
+						</delete>
+						   <javadoc sourcepath="${lab8_Doc}" destdir="doc8">		            
+							          <packageset dir="${sourceDir}">
+							              <include name="com/lab111/labwork8" />
+							          </packageset>
+							</javadoc>
+						</target>
+	<!-- =================== Create JavaDoc for lab9 Target ==================================== -->
+					<target name="javadoc_lab9">
+						<delete includeEmptyDirs="true">
+								<fileset dir="doc9">
+										 <exclude name="**/*.uxf" />
+								</fileset>
+						</delete>
+						   <javadoc sourcepath="${lab9_Doc}" destdir="doc9">		            
+							          <packageset dir="${sourceDir}">
+							              <include name="com/lab111/labwork9" />
+							          </packageset>
+							</javadoc>
+						</target> 
 
 </project>

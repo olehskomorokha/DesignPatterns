@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>32</x>
+      <y>160</y>
+      <w>160</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>/com.lab111.labwork4::Shape/
+--
+#API1: API1
+#API2: API2
+--
++Shape(API1 API1): ctor
++Shape(API2 API2): ctor
++drawRectangle(): void
++drawRect(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>32</x>
+      <y>336</y>
+      <w>312</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>com.lab111.labwork4::Rectangle
+--
+-x, y, width, height: int
+--
++Rectangle(int x, int y, int width, int height, API1 API1): ctor
++Rectangle(int x, int y, int width, int height, API2 API2): ctor
++drawRectangle(): void
++drawRect(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>272</x>
+      <y>128</y>
+      <w>280</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+com.lab111.labwork4::API1
+--
+--
+~drawRectangle(int x, int y, int width, int height): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>272</x>
+      <y>208</y>
+      <w>280</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+com.lab111.labwork4::API2
+--
+--
+~drawRect(int x, int y, int width, int height): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>128</y>
+      <w>280</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>com.lab111.labwork4::ConcreteAPI1
+--
+--
++drawRectangle(int x, int y, int width, int height): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>224</y>
+      <w>248</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>com.lab111.labwork4::ConcreteAPI2
+--
+--
++drawRect(int x, int y, int width, int height): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>656</x>
+      <y>360</y>
+      <w>152</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>com.lab111.labwork4::Main
+--
+--
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>184</x>
+      <y>232</y>
+      <w>104</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>184</x>
+      <y>176</y>
+      <w>104</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>120</x>
+      <y>272</y>
+      <w>24</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>544</x>
+      <y>144</y>
+      <w>112</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>544</x>
+      <y>232</y>
+      <w>112</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+</diagram>

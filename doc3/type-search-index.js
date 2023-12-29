@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.lab111.labwork3","l":"CompositeGraphic"},{"p":"com.lab111.labwork3","l":"Figure"},{"p":"com.lab111.labwork3","l":"Graphic"},{"p":"com.lab111.labwork3","l":"Main"}];updateSearchResults();

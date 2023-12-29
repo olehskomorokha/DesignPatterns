@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>49</x>
+      <y>406</y>
+      <w>203</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>com.lab111.labwork7::Add
+--
+-left: Expression
+-right: Expression
+--
++Add(Expression left, Expression right): ctor
++interpret(Map&lt;String, Integer&gt; context): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>105</x>
+      <y>504</y>
+      <w>217</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>com.lab111.labwork7::Divide
+--
+-left: Expression
+-right: Expression
+--
++Divide(Expression left, Expression right): ctor
++interpret(Map&lt;String, Integer&gt; context): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>385</x>
+      <y>504</y>
+      <w>217</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>com.lab111.labwork7::Multiply
+--
+-left: Expression
+-right: Expression
+--
++Multiply(Expression left, Expression right): ctor
++interpret(Map&lt;String, Integer&gt; context): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>322</x>
+      <y>406</y>
+      <w>224</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>com.lab111.labwork7::Subtract
+--
+-left: Expression
+-right: Expression
+--
++Subtract(Expression left, Expression right): ctor
++interpret(Map&lt;String, Integer&gt; context): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>455</x>
+      <y>105</y>
+      <w>203</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>com.lab111.labwork7::Evaluator
+--
+-syntaxTree: Expression
+--
++Evaluator(String expression): ctor
++evaluate(Map&lt;String, Integer&gt; context): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>161</x>
+      <y>266</y>
+      <w>203</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>com.lab111.labwork7::Number
+--
+-number: int
+--
++Number(int number): ctor
++interpret(Map&lt;String, Integer&gt; context): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>637</x>
+      <y>448</y>
+      <w>203</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>com.lab111.labwork7::Variable
+--
+-name: String
+--
++Variable(String name): ctor
++interpret(Map&lt;String, Integer&gt; context): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>455</x>
+      <y>252</y>
+      <w>203</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+com.lab111.labwork7::Expression
+--
+--
+~interpret(Map&lt;String, Integer&gt; context): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>161</x>
+      <y>182</y>
+      <w>133</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>com.lab111.labwork7::Main
+--
+--
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>301</y>
+      <w>21</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>133</x>
+      <y>357</y>
+      <w>518</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>720.0;20.0;10.0;20.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>399</x>
+      <y>364</y>
+      <w>21</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>364</y>
+      <w>21</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;10.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>581</x>
+      <y>364</y>
+      <w>21</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;10.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>357</y>
+      <w>105</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>130.0;130.0;130.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>357</x>
+      <y>287</y>
+      <w>112</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>140.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>651</x>
+      <y>266</y>
+      <w>175</w>
+      <h>196</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>230.0;260.0;230.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>287</x>
+      <y>140</y>
+      <w>182</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>240.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>287</x>
+      <y>210</y>
+      <w>182</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>240.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
